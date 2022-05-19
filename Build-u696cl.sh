@@ -12,7 +12,7 @@ mka recoveryimage
 echo
 echo " Recovery Should Be Built"
 echo ""
-mv $OUT/recovery.img ~/Desktop/OranegFox_11_Recovery-UMX_U696CL.img
+mv $OUT/recovery.img ~/Desktop/OrangeFox_11_Recovery-UMX_U696CL.img
 #cd /media/pizzag/Android/Recoveries/TWRP/10
 #make clean
 read
