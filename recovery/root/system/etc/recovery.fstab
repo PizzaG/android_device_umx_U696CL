@@ -1,0 +1,21 @@
+# mount point       fstype    device                                                                flags
+/system             ext4      system                                                                flags=display="System";backup=1;logical;
+/system_image       emmc      system                                                                flags=display="System image";backup=1;flashimg=1;logical;
+/cache              ext4      /dev/block/bootdevice/by-name/cache                                   flags=display="Cache";
+/vendor             ext4      vendor                                                                flags=display="Vendor";backup=1;logical;
+/vendor_image       emmc      vendor                                                                flags=display="Vendor image";backup=1;flashimg=1;logical;
+/product            ext4      product                                                               flags=display="Product";backup=1;logical;
+/product_image      emmc      product                                                               flags=display="Product image";backup=1;flashimg=1;logical;
+/system_ext         ext4      system_ext                                                            flags=display="System_ext";backup=1;logical;
+/system_ext_image   emmc      system_ext                                                            flags=display="System_ext image";backup=1;flashimg=1;logical;
+/metadata           ext4      /dev/block/bootdevice/by-name/metadata                                
+/data               f2fs      /dev/block/bootdevice/by-name/userdata                                flags=display="Data";
+/boot               emmc      /dev/block/bootdevice/by-name/boot                                    flags=display="Boot";backup=1;flashimg=1;
+/recovery           emmc      /dev/block/bootdevice/by-name/recovery                                flags=display="Recovery";backup=1;flashimg=1;
+/misc               emmc      /dev/block/bootdevice/by-name/misc                                    
+/umx_persist        ext4      /dev/block/bootdevice/by-name/persist                                 
+
+
+# Removable storage
+/external_sd	 auto	/dev/block/mmcblk1p1                         flags=display="Micro-SDcard";storage;wipeingui;removable
+#/usb-otg	     auto	/dev/block/sde1	       /dev/block/sde		 flags=display="USB-OTG";storage;wipeingui;removable
