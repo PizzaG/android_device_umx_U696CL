@@ -1,0 +1,1 @@
+# android_device_umx_U696CL
